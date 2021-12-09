@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="UTF-8">
+    <title>Hello from Java</title>
+    <style>
+        body {
+            background-color: #2D2D2D;
+        }
+
+        h1 {
+            color: #C26356;
+            font-size: 30px;
+            font-family: Menlo, Monaco, fixed-width;
+        }
+        p {
+            color: white;
+            font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
+        }
+    </style>
+</head>
+<body>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    <p th:text="'The date today is  ' + ${date} + '!'" />
+    <p th:text="'And the time is ' + ${time} + '!'" />
+</body>
+</html>
