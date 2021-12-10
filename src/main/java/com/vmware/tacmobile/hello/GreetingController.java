@@ -18,7 +18,7 @@ public class GreetingController {
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
         log.info("Name: {}", name);
         model.addAttribute("name", name);
-        model.addAttribute("date", ZonedDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT)));
+        model.addAttribute("date", ZonedDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)));
         model.addAttribute("time", ZonedDateTime.now().format(DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM)));
         return "greeting";
     }
