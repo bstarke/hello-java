@@ -61,7 +61,8 @@
 				<configuration>
 					<classifier>${repackage.classifier}</classifier>
 					<image>
-						<builder>paketobuildpacks/builder:tiny</builder>
+						<builder>harbor.home.starkenberg.net/hub/paketobuildpacks/builder:tiny</builder>
+						<runImage>harbor.home.starkenberg.net/hub/paketobuildpacks/run:tiny-cnb</runImage>
 						<env>
 							<BP_NATIVE_IMAGE>true</BP_NATIVE_IMAGE>
 						</env>
